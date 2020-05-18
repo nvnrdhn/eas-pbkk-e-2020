@@ -1,7 +1,9 @@
 <?php
 declare(strict_types=1);
 
-class UserController extends \Phalcon\Mvc\Controller
+use Phalcon\Mvc\Controller;
+
+class UserController extends Controller
 {
 
     public function indexAction()
@@ -11,6 +13,9 @@ class UserController extends \Phalcon\Mvc\Controller
 
     public function loginAction()
     {
+        if ($this->session->has('auth')) {
+            return $this->response->redirect('bantuan/index');
+        }
         if ($this->request->isPost()) {
             $email = $this->request->getPost('email');
             $password = $this->request->getPost('password');
@@ -62,6 +67,7 @@ class UserController extends \Phalcon\Mvc\Controller
     public function logoutAction()
     {
         $this->session->destroy();
+        return $this->response->redirect();
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-class BantuanController extends \Phalcon\Mvc\Controller
+class BantuanController extends ControllerBase
 {
 
     public function indexAction()
