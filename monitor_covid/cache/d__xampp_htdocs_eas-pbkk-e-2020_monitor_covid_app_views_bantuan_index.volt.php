@@ -1,0 +1,1 @@
+<?= $this->flash->output() ?>

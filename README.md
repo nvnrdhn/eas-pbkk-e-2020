@@ -27,6 +27,7 @@ Dibuat oleh: Novan Ardhana - 05111740000086
 - UserController:
   - loginAction: Fungsi ini bertugas untuk memeriksa kredensial yang diberikan pengguna yaitu berupa email dan password. Jika kredensial terdaftar dalam database maka fungsi akan men-set session auth berupa ID dan nama user yang bersangkutan. Kemudian fungsi akan melakukan redirect ke halaman bantuan.
   - registerAction: Fungsi ini bertugas untuk mendaftarkan user baru ke database. Fungsi ini juga akan memeriksa email yang diinput, jika sudah digunakan oleh user lain maka fungsi akan memberikan flash error. Ketika user berhasil melakukan register maka fungsi ini akan melakukan redirect ke halaman login.
+  - logoutAction: Fungsi ini bertugas untuk menghapus session user.
 ## Model
 - User: Menampung atribut-atribut pada tabel User
 - Kategori: Menampung atribut-atribut pada tabel Kategori
