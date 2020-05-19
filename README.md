@@ -57,9 +57,8 @@ Dibuat oleh: Novan Ardhana - 05111740000086
     ![alt text][detail_page]
 
 ## Migrate Database
-- Buka `http://localhost/webtools.php/migrations/run`
-    ![alt text][migration]
-- Klik tombol "Run"
+- Buat table `monitor_covid`
+- Jalankan `vendor/bin/phalcon-migrations run --table=user,transaksi,kategori,bantuan`
 
 [db_img]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/db_img.png "db_img"
 [register_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/register_page.png "db_img"
