@@ -57,7 +57,7 @@ Dibuat oleh: Novan Ardhana - 05111740000086
     ![alt text][detail_page]
 
 ## Migrate Database
-- Buat table `monitor_covid`
+- Buat database `monitor_covid`
 - Jalankan `vendor/bin/phalcon-migrations run --table=user,transaksi,kategori,bantuan`
 
 [db_img]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/db_img.png "db_img"
