@@ -30,8 +30,8 @@
                 <th scope="row">{{bantu.id}}</th>
                 <td>{{bantu.transaksi.user.nama}}</td>
                 <td>{{bantu.nama}}</td>
-                <td>{{bantu.kategori.nama}}</td>
-                <td>{{bantu.jumlah}}</td>
+                <td>{{link_to('bantuan/kategori/'~bantu.kategori_id, bantu.kategori.nama)}}</td>
+                <td>{{bantu.jumlah|number_format(1, ',', '.')}}</td>
                 <td>{{bantu.satuan}}</td>
                 <td>{{link_to('bantuan/details/'~bantu.id, 'Lihat detail transaksi')}}</td>
             </tr>

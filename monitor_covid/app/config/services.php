@@ -55,6 +55,10 @@ $di->setShared('view', function () {
                 'separator' => '_'
             ]);
 
+            $compiler = $volt->getCompiler();
+
+            $compiler->addFilter('number_format', 'number_format');
+
             return $volt;
         },
         '.phtml' => PhpEngine::class

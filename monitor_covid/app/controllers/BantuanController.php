@@ -41,7 +41,7 @@ class BantuanController extends ControllerBase
             if (empty($array_bantuan)) return $this->flash->error('Tidak ada bantuan yang ditambahkan!');
             $transaksi = new Transaksi();
             $transaksi->user_id = $this->session->get('auth')['id'];
-            $transaksi->Bantuan = $array_bantuan;
+            $transaksi->bantuan = $array_bantuan;
             if (!$transaksi->save()) {
                 foreach ($transaksi->getMessages() as $message) {
                     $this->flash->error((string) $message);

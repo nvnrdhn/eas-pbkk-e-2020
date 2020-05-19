@@ -30,8 +30,8 @@
                 <th scope="row"><?= $bantu->id ?></th>
                 <td><?= $bantu->transaksi->user->nama ?></td>
                 <td><?= $bantu->nama ?></td>
-                <td><?= $bantu->kategori->nama ?></td>
-                <td><?= $bantu->jumlah ?></td>
+                <td><?= $this->tag->linkTo(['bantuan/kategori/' . $bantu->kategori_id, $bantu->kategori->nama]) ?></td>
+                <td><?= number_format($bantu->jumlah, 1, ',', '.') ?></td>
                 <td><?= $bantu->satuan ?></td>
                 <td><?= $this->tag->linkTo(['bantuan/details/' . $bantu->id, 'Lihat detail transaksi']) ?></td>
             </tr>
