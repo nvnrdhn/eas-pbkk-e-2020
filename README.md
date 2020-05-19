@@ -43,15 +43,18 @@ Dibuat oleh: Novan Ardhana - 05111740000086
     Jika pendaftaran berhasil maka akan muncul notifikasi seperti gambar dibawah.
     ![alt text][register_success]
 - Login: Mendaftarkan session akun. User harus login terlebih dahulu sebelum mengakses sistem.
-![alt text][register_page]
+    ![alt text][login_page]
+    Jika login berhasil akan di-redirect ke halaman bantuan.
+    ![alt text][login_success]
 - Logout: Menghapus session akun.
-![alt text][register_page]
 - Monitor: Melihat daftar bantuan berdasarkan kategori.
-![alt text][register_page]
+    ![alt text][monitor_page]
 - Tambah Bantuan: Menambahkan transaksi baru yang bisa memiliki lebih dari 1 bantuan.
-![alt text][register_page]
+    ![alt text][create_page]
+    Jika berhasil maka akan di-redirect ke halaman detail.
+    ![alt text][create_success]
 - Detail Transaksi: Melihat detail transaksi beserta list bantuannya.
-![alt text][register_page]
+    ![alt text][detail_page]
 
 ## Migrate Database
 
@@ -59,3 +62,9 @@ Dibuat oleh: Novan Ardhana - 05111740000086
 [db_img]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/db_img.png "db_img"
 [register_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/register_page.png "db_img"
 [register_success]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/register_success.png "db_img"
+[create_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/create_page.png "db_img"
+[create_success]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/create_success.png "db_img"
+[detail_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/detail_page.png "db_img"
+[login_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/login_page.png "db_img"
+[login_success]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/login_success.png "db_img"
+[monitor_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/monitor_page.png "db_img"
