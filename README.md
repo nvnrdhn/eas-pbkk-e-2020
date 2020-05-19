@@ -4,7 +4,7 @@ Aplikasi web phalcon untuk monitoring bantuan covid-19
 Dibuat oleh: Novan Ardhana - 05111740000086
 
 ## Tabel
-[db_img]
+![alt text][db_img]
 - Tabel User: berisi data pengguna seperti ID User, nama, email, password. Tabel User terhubung ke Tabel Transaksi dengan relasi one-to-many (satu user bisa memiliki banyak transaksi).
 - Tabel Kategori: berisi data jenis-jenis bantuan yang tersedia seperti ID Kategori, nama kategori, dll. (contoh: Bahan Makanan, Alat Kesehatan, dll.)
 - Tabel Transaksi: menyimpan data transaksi seperti ID Transaksi, ID User penyumbang, tanggal transaksi, keterangan, dll.
@@ -35,4 +35,4 @@ Dibuat oleh: Novan Ardhana - 05111740000086
 - Transaksi: Menampung atribut-atribut pada tabel Transaksi
 - Bantuan: Menampung atribut-atribut pada tabel Bantuan
 
-[db_img]:https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/db_img.png
+[db_img]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/db_img.png "db_img"
