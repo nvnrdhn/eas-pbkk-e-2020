@@ -1,7 +1,7 @@
 <div class="container mt-3">
     {{ flash.output() }}
     <div class="my-5 page-header text-center">
-        <h2>Register for bantu.in</h2>
+        <h2>Register</h2>
     </div>
     {{ form('user/register') }}
         <fieldset>

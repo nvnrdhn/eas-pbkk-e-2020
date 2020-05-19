@@ -49,14 +49,14 @@ class BantuanController extends ControllerBase
             }
             else {
                 $this->flash->success('Bantuan berhasil ditambahkan!');
-                return $this->response->redirect('bantuan');
+                return $this->response->redirect('bantuan/details/'.$transaksi->id);
             }
         }
     }
 
-    public function detailsAction($bantuan_id)
+    public function detailsAction($transaksi_id)
     {
-
+        $this->view->transaksi = Transaksi::findFirst($transaksi_id);
     }
 
 }

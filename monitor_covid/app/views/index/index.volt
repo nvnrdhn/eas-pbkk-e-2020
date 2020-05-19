@@ -1,6 +1,6 @@
 {{flash.output()}}
 <div class="jumbotron">
-    <h1>Welcome to bantu.in!</h1>
+    <h1>Selamat Datang!</h1>
     <p>Bantu.in adalah aplikasi web sederhana untuk monitoring bantuan-bantuan yang ditujukan untuk pandemik covid-19.
         Disini Anda bisa melihat daftar-daftar bantuan yang tersimpan pada sistem. Anda juga bisa menambahkan bantuan.</p>
     <p>{{ link_to('user/register', 'Coba sekarang!', 'class': 'btn btn-primary btn-large btn-success') }}</p>

@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-1">
-                    <button type="button" class="remove btn btn-danger"><b>&times;</b></button>
+                    <button type="button" class="remove btn btn-light"><b>&times;</b></button>
                 </div>
             </div>
 

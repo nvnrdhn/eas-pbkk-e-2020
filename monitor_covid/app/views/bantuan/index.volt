@@ -15,7 +15,6 @@
     <table class="table table-hover">
         <thead class="thead-light">
             <tr>
-                <th scope="col">ID</th>
                 <th scope="col">Penyumbang</th>
                 <th scope="col">Bantuan</th>
                 <th scope="col">Kategori</th>
@@ -27,18 +26,17 @@
         <tbody>
             {% for bantu in bantuan %}
             <tr>
-                <th scope="row">{{bantu.id}}</th>
                 <td>{{bantu.transaksi.user.nama}}</td>
                 <td>{{bantu.nama}}</td>
                 <td>{{link_to('bantuan/kategori/'~bantu.kategori_id, bantu.kategori.nama)}}</td>
                 <td>{{bantu.jumlah|number_format(1, ',', '.')}}</td>
                 <td>{{bantu.satuan}}</td>
-                <td>{{link_to('bantuan/details/'~bantu.id, 'Lihat detail transaksi')}}</td>
+                <td>{{link_to('bantuan/details/'~bantu.transaksi.id, 'Lihat detail transaksi')}}</td>
             </tr>
             {% endfor %}
             {% if bantuan|length == 0 %}
             <tr>
-                <th colspan="7" class="text-center">Data bantuan tidak ditemukan</th>
+                <th colspan="6" class="text-center">Data bantuan tidak ditemukan</th>
             </tr>
             {% endif %}
         </tbody>

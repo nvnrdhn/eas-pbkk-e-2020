@@ -51,6 +51,6 @@
     <?= $this->getContent() ?>
     <hr>
     <footer>
-        <p>&copy; Novan Ardhana <?= date('Y') ?></p>
+        <p>&copy; nvnrdhn <?= date('Y') ?></p>
     </footer>
 </div>

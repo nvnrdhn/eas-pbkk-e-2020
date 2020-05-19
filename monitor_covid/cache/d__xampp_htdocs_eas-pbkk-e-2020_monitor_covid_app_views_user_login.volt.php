@@ -1,7 +1,7 @@
 <div class="container mt-3">
     <?= $this->flash->output() ?>
     <div class="my-5 page-header text-center">
-        <h2>Log in ke bantu.in</h2>
+        <h2>Log in</h2>
     </div>
     <?= $this->tag->form(['user/login']) ?>
         <fieldset>
@@ -12,7 +12,7 @@
                     </label>
 
                     <div>
-                        <?= $this->tag->textField(['email', 'class' => 'form-control']) ?>
+                        <?= $this->tag->textField(['email', 'class' => 'form-control', 'required' => '']) ?>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     </label>
 
                     <div>
-                        <?= $this->tag->passwordField(['password', 'class' => 'form-control']) ?>
+                        <?= $this->tag->passwordField(['password', 'class' => 'form-control', 'required' => '']) ?>
                     </div>
                 </div>
             </div>
