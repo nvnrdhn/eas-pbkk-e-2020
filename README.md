@@ -57,7 +57,9 @@ Dibuat oleh: Novan Ardhana - 05111740000086
     ![alt text][detail_page]
 
 ## Migrate Database
-
+- Buka `http://localhost/webtools.php/migrations/run`
+    ![alt text][migration]
+- Klik tombol "Run"
 
 [db_img]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/db_img.png "db_img"
 [register_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/register_page.png "db_img"
@@ -68,3 +70,4 @@ Dibuat oleh: Novan Ardhana - 05111740000086
 [login_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/login_page.png "db_img"
 [login_success]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/login_success.png "db_img"
 [monitor_page]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/monitor_page.png "db_img"
+[migration]: https://raw.githubusercontent.com/nvnrdhn/eas-pbkk-e-2020/master/migration.png "db_img"
