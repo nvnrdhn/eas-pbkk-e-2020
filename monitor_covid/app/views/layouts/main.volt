@@ -10,7 +10,6 @@
         'with_auth': true
     ]
 ] %}
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
     <a class="navbar-brand" href="/">bantu.in</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +20,24 @@
         <ul class="navbar-nav mr-auto">
             {% for controller, menu in topMenu %}
                 {% if (session.has('auth') and menu['with_auth'] === true) or menu['with_auth'] === false %}
-                <li class="nav-item {% if controller == dispatcher.getControllerName()|lower %}active{% endif %}">
-                    <a class="nav-link" href="{{ menu['uri'] }}">{{ menu['title'] }}</a>
-                </li>
+                    {% if menu['title'] is sameas('Bantuan') %}
+                    <li class="nav-item dropdown {% if controller == dispatcher.getControllerName()|lower %}active{% endif %}">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bantuan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% for kat in kategori %}
+                            <a class="dropdown-item" href="/bantuan/kategori/{{kat.id}}">{{kat.nama}}</a>
+                            {% endfor %}
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/bantuan">Semua</a>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li class="nav-item {% if controller == dispatcher.getControllerName()|lower %}active{% endif %}">
+                        <a class="nav-link" href="{{ menu['uri'] }}">{{ menu['title'] }}</a>
+                    </li>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </ul>

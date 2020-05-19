@@ -7,7 +7,9 @@ class ControllerBase extends Controller
 {
     public function initialize()
     {
+        $kategori = Kategori::find();
         $this->tag->prependTitle('INVO | ');
+        $this->view->kategori = $kategori;
         $this->view->setTemplateAfter('main');
     }
 }

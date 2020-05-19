@@ -42,15 +42,20 @@ class UserController extends Controller
 
     public function registerAction()
     {
+        if ($this->session->has('auth')) {
+            return $this->response->redirect('bantuan/index');
+        }
         if ($this->request->isPost()) {
             $email = $this->request->getPost('email');
             $password = $this->request->getPost('password');
             $nama = $this->request->getPost('nama');
 
             $user = new User();
-            $user->email = $email;
-            $user->password = password_hash($password, PASSWORD_DEFAULT);
-            $user->nama = $nama;
+            $user->assign([
+                'email' => $email,
+                'password' => password_hash($password, PASSWORD_DEFAULT),
+                'nama' => $nama
+            ]);
 
             if (!$user->save()) {
                 foreach ($user->getMessages() as $message) {
